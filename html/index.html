@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 这句是告诉浏览器，这是一个移动设备页面 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<!-- 顶部导航栏 -->
+<div class="top-menu">
+    <div class="ui container">
+        <div class="ui four column grid">
+            <div class="column">
+                首页
+            </div>
+            <div class="column">
+                Blog
+            </div>
+            <div class="column">
+                作品
+            </div>
+            <div class="column">
+                联系
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 首页幻灯片 -->
+<div id="banner">
+    <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="image/biandui.jpg" alt="biandui"></div>
+      <div class="swiper-slide"><img src="image/biandui.jpg" alt="biandui"></div>
+      <div class="swiper-slide"><img src="image/biandui.jpg" alt="biandui"></div>
+      <div class="swiper-slide"><img src="image/biandui.jpg" alt="biandui"></div>
+      <div class="swiper-slide"><img src="image/biandui.jpg" alt="biandui"></div>
+      <div class="swiper-slide"><img src="image/biandui.jpg" alt="biandui"></div>
+      <div class="swiper-slide"><img src="image/biandui.jpg" alt="biandui"></div>
+      <div class="swiper-slide"><img src="image/biandui.jpg" alt="biandui"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <!-- div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+  </div>
+</div>
+
+<!-- 功能导航 -->
+<div id="nav-btn">
+    <div class="ui container">
+        <div class="ui four column grid">
+            <div class="column"><img src="icon/edit.svg" alt="编辑"></div>
+            <div class="column"><img src="icon/message.svg" alt="编辑"></div>
+            <div class="column"><img src="icon/user.svg" alt="编辑"></div>
+            <div class="column"><img src="icon/view.svg" alt="编辑"></div>
+            <div class="column"><img src="icon/edit.svg" alt="编辑"></div>
+            <div class="column"><img src="icon/message.svg" alt="编辑"></div>
+            <div class="column"><img src="icon/user.svg" alt="编辑"></div>
+            <div class="column"><img src="icon/view.svg" alt="编辑"></div>
+        </div>
+    </div>
+</div>
+
+<div class="article-list">
+    <div class="ui container">
+        <div class="ui header">
+            <h2>最新更新</h2>
+        </div>
+        <!-- 循环文章列表 -->
+        <div class="article-item">
+            <img src="image/suoluetu.png" alt="suoluetu">
+            <div class="title">
+                这是文章的标题
+                <span>2020-03-23</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="article-item">
+            <img src="image/suoluetu.png" alt="suoluetu">
+            <div class="title">
+                这是文章的标题
+                <span>2020-03-23</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="article-item">
+            <img src="image/suoluetu.png" alt="suoluetu">
+            <div class="title">
+                这是文章的标题
+                <span>2020-03-23</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="article-item">
+            <img src="image/suoluetu.png" alt="suoluetu">
+            <div class="title">
+                这是文章的标题
+                <span>2020-03-23</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="article-item">
+            <img src="image/suoluetu.png" alt="suoluetu">
+            <div class="title">
+                这是文章的标题
+                <span>2020-03-23</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<!-- 底部tabbar -->
+<div class="tabBar">
+    <div class="ui four column grid">
+        <div class="column">
+            首页
+        </div>
+         <div class="column">
+            分类
+        </div>
+         <div class="column">
+            热门
+        </div>
+         <div class="column">
+            我的
+        </div>
+    </div>
+</div>
+
+<!-- 首页的身体,前期设置高度用的 目前是是制作一个高度为3000像素的框体 -->
+<!-- <div class="body"></div> -->
+
+<script src="js/swiper.js" charset="utf-8"></script>
+<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // navigation: {
+      // nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+    });
+  </script>
+</body>
+</html>

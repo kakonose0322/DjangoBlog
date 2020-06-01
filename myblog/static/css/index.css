@@ -1,0 +1,136 @@
+html {
+    /* 这里与 1rem 连用就是 1rem 就是10个像素 */
+    font-size: 10px;
+}
+.top-menu {
+    background: #000;
+    color: #fff;
+    /*设置这个使得居中*/
+    padding-top: 2rem;
+    /*悬浮固定在上方*/
+    position: fixed;
+    top: 0;
+    /* 设置导航栏的层级（相当于PS），999为最高 */
+    z-index: 999;
+    width: 100%;
+    height: 5rem;
+}
+
+.top-menu .column {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.body {
+    height: 3000px;
+}
+
+#banner {
+    /*这里也可以修改top-menu的透明度为0.8*/
+    margin-top: 5rem;
+}
+
+#nav-btn {
+    margin-top: 1rem;
+}
+
+#nav-btn .column {
+    text-align: center;
+}
+
+#nav-btn .column img {
+    width: 5rem;
+}
+
+.article-list {
+    margin-top: 2rem;
+}
+
+.article-list .article-item {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.article-item img {
+    width: 100%;
+    float: left;
+    border-radius: 1rem;
+}
+
+.article-item .title {
+    background: #0006;
+    height: 3rem;
+    float: left;
+    width: 100%;
+    margin-top: -3rem;
+    color: #fff;
+    /*绝对定位,无法使用是因为这里图片层级比它高 */
+    /*position: absolute;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 3rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.article-item .title span {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.tabBar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    height: 4rem;
+}
+
+.tabBar .column {
+    padding-top: 12px;
+    text-align: center;
+}
+
+#login {
+    
+}
+#login .userUI {
+    position: fixed;
+    top: 20rem;
+    width: 100%;
+    height: 20rem;
+}
+
+#login .userUI .ui.container {
+    background: #fff;
+    padding: 1rem 0 1rem 0;
+    border: 1px solid #efefef;
+    text-align: center;
+}
+
+#login .userUI .ui.container .item {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 4rem;
+}
+
+#login .userUI .ui.container .item input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #b9b9b9;
+    /*高度为4rem，想要它的边框为圆形就设为高度的一半*/
+    border-radius: 2rem;
+    text-align: center;
+}
+
+#login .userUI .ui.container button {
+    background: #fff;
+    width: 10rem;
+    height: 3rem;
+    margin-left: 1rem;
+    border: 1px solid #b9b9b9;
+    border-radius: 1.5rem;
+}
